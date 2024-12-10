@@ -1,6 +1,6 @@
 /* Define Variables */
 :root {
-    --primary-color: #1f4b9d; /* Adjust as needed */
+    --primary-color: #1f4b9d; 
     --secondary-color: #56C1E1;
     --accent-color: #87A1C6;
     --accent-color2: #2C3E50;
@@ -20,7 +20,7 @@ body {
 /* Header with Grid Layout */
 header {
     display: grid;
-    grid-template-columns: auto 1fr; /* Logo takes minimal space, nav takes the rest */
+    grid-template-columns: auto 1fr; 
     align-items: center;
     padding: 1rem;
     background-color: var(--primary-color);
@@ -29,20 +29,30 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
+/* Container styling for a single-row layout */
 .container {
     display: flex;
-    justify-content: space-around;
-    gap: 1rem;
-    padding: 2rem;
-    background-color: var(--accent-color2);
+    gap: 16px;
+    justify-content: space-around; 
+    align-items: center; 
 }
 
-.container img {
-    width: calc(20% - 1rem); /* Five images in a row with spacing */
-    max-width: 200px;
-    border-radius: 5px;
-    height: auto;
+
+.container .items {
+    flex: 1 1 auto; 
+    max-width: 200px; 
+    text-align: center; 
 }
+
+/* Image styling */
+.container .items img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+
+
 
 /* Logo Styling */
 .logo {
@@ -53,13 +63,13 @@ header {
 
 /* Navigation Styling with Flexbox */
 nav {
-    justify-self: end; /* Align nav to the right */
+    justify-self: end; 
 }
 
 .navigation {
     display: flex;
     list-style: none;
-    gap: 1rem; /* Space between nav items */
+    gap: 1rem; 
     padding: 0;
     margin: 0;
 }
