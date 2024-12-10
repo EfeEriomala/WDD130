@@ -17,28 +17,66 @@ body {
     background-color: var(--accent-color2);
 }
 
+/* Header with Grid Layout */
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo takes minimal space, nav takes the rest */
     align-items: center;
-    justify-content: space-between;
     padding: 1rem;
     background-color: var(--primary-color);
+    max-width: 100vw;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
 }
 
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--accent-color2);
+}
+
+.container img {
+    width: calc(20% - 1rem); /* Five images in a row with spacing */
+    max-width: 200px;
+    border-radius: 5px;
+    height: auto;
+}
+
+/* Logo Styling */
 .logo {
-    height: 80px;
-    margin-left: 5%;
+    width: 80px;
+    height: auto;
+    margin-left: 1rem;
 }
 
-nav a {
+/* Navigation Styling with Flexbox */
+nav {
+    justify-self: end; /* Align nav to the right */
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    gap: 1rem; /* Space between nav items */
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
     color: var(--text-color);
+    padding: 0.5rem 1rem;
     text-decoration: none;
-    margin: 0 0.5rem;
+    font-weight: 700;
 }
 
-nav a:hover {
+.navigation a:hover {
     color: var(--accent-color);
+    text-decoration: underline;
 }
+
 
 /* Hero Section */
 .hero {
@@ -86,22 +124,26 @@ nav a:hover {
 }
 
 /* Sections */
-section>h2 {
+.history {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
     padding: 2rem;
+    background-color: var(--accent-color2);
+    color: var(--text-color);
 }
-
 section>h2,p{
     text-align: center;
 }
-
-
-section img {
-    display: inline-block;
-    margin: 0.5rem;
-    width: 235px;
-    height: auto;
+.history-item {
+    padding: 1rem;
     border-radius: 5px;
-    align-items: center;
+    text-align: center;
+}
+
+.history img {
+    width: 100%;
+    border-radius: 5px;
 }
 
 /* Footer */
