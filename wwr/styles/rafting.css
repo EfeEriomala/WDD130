@@ -291,7 +291,7 @@ form input[type="email"]{
 
 form textarea {
     resize: vertical;
-    width: 750px;
+    width: 350px;
     height: 20vh;
 }
 
