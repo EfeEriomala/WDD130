@@ -318,7 +318,7 @@ form input[type="checkbox"] {
     margin-right: 5px;
 }
 
-button[type="submit"] {
+input[type="submit"] {
     padding: 10px;
     background-color: #333;
     color: white;
@@ -327,7 +327,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: #555;
 }
 
