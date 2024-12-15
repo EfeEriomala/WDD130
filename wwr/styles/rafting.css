@@ -318,7 +318,7 @@ form input[type="checkbox"] {
     margin-right: 5px;
 }
 
-button[type="submit"] {
+button[type="button"] {
     padding: 10px;
     background-color: #333;
     color: white;
