@@ -236,6 +236,12 @@ main.contact{
     max-width: 800px;
     text-align: start;
 }
+main.contac iframe{
+    width: 400;
+    height: 300;
+    border: 0;
+    
+}
 main.contact h1{
     text-align: center;
 }
