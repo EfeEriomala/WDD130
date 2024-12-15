@@ -272,7 +272,7 @@ main.contact h1{
 
 /* Contact Form */
 form {
-    
+    padding: 2%;
     flex-direction: column;
 }
 
@@ -291,7 +291,7 @@ form input[type="email"]{
 
 form textarea {
     resize: vertical;
-    width: 800px;
+    width: 750px;
     height: 20vh;
 }
 
@@ -318,7 +318,7 @@ form input[type="checkbox"] {
     margin-right: 5px;
 }
 
-button[type="button"] {
+button[type="submit"] {
     padding: 10px;
     background-color: #333;
     color: white;
