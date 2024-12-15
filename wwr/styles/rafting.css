@@ -237,8 +237,8 @@ main.contact{
     text-align: start;
 }
 main.contac iframe{
-    width: 400;
-    height: 300;
+    width: 400%;
+    height: 400%;
     border: 0;
     
 }
