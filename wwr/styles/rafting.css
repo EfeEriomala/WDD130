@@ -318,7 +318,7 @@ form input[type="checkbox"] {
     margin-right: 5px;
 }
 
-button #myButton {
+input[type="submit"] {
     padding: 10px;
     background-color: #333;
     color: white;
@@ -327,7 +327,7 @@ button #myButton {
     cursor: pointer;
 }
 
-button #myButton:hover {
+input[type="submit"]:hover {
     background-color: #555;
 }
 
